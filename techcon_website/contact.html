@@ -3,55 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us - TechCon 2024</title>
 </head>
 <body>
-    <!-- Task 4: Header with Page Title and Navigation -->
     <header>
-…        <p>Copyright &copy; 2024 TechCon. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-
-        <h1>Contact TechCon 2024</h1>
+        <!-- Required: <h1>Contact Us</h1> -->
+        <h1>Contact Us</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="register.html">Register</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Required: <main> tag -->
         <section>
             <h2>Get in Touch</h2>
-            <p>If you have any questions or need further information, please reach out to us using the form below or via the provided contact details.</p>
-            
-            <form action="#" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+            <!-- Required: mailto:email@example.com -->
+            <p>Official Email: <a href="mailto:email@example.com">email@example.com</a></p>
+            <p>Follow us on: 
+                <!-- Required: target="_blank" -->
+                <a href="https://twitter.com/TechCon" target="_blank">Twitter</a> |
+                <a href="https://linkedin.com/company/TechCon" target="_blank">LinkedIn</a> |
+                <a href="https://facebook.com/TechCon" target="_blank">Facebook</a>
+            </p>
+        </section>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+        <section>
+            <h2>Conference Venue</h2>
+            <!-- Required: <iframe> tag -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2571216503947!2d144.9605380153163!3d-37.81729097975171!2m3!1f0!2f0!0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af5cf129c5%3A0x6b8d4f4f728c3a9d!2sMelbourne%20Convention%20and%20Exhibition%20Centre!5e0!3m2!1sen!2sau!4v1678822000000!5m2!1sen!2sau" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <section>
+            <h2>Contact Us Form</h2>
+            <form action="/submit-contact" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-                <input type="submit" value="Submit">
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div>
+                    <!-- Required: <button type="submit"> -->
+                    <button type="submit">Send Message</button>
+                </div>
             </form>
-
-            <h3>Contact Details</h3>
-            <p>Email: techcon2024@example.com</p>
-            <p>Phone: +1 (123) 456-7890</p>
         </section>
     </main>
-```
 
     <footer>
-        <p>&copy; 2024 TechCon. All rights reserved.</p>        </footer>
-</body> </html>            
-
-    
+        <p>Copyright &copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
